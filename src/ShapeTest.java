@@ -21,6 +21,14 @@ public class ShapeTest {
             rectangle.draw();
             System.out.println();
         }
+
+        Shape triangle= shapeFactory.getShape("TRIANGLE");
+        if(triangle!=null){
+            System.out.println("Triangle:");
+            triangle.draw();
+            System.out.println();
+        }
+
         // Test invalid shape
         Shape invalidShape = shapeFactory.getShape("PENTAGON");
         if(invalidShape != null){
